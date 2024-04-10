@@ -1,0 +1,200 @@
+/* sirve para añadir estilos a toda la pagina */
+
+*{
+    padding: 0;
+    margin: 0;
+    ;
+}
+.fondo{
+    background-color: aquamarine;
+}
+.hero{
+    background-image: linear-gradient(120deg,rgba(0, 236, 228, 0.5),
+    rgba(52, 43, 73, 0.8) ), url(iamgen1.jpg);
+    height: 450px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}   
+.texto-hero{
+    color: white;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.texto-70{
+    font-size: 70px;
+    text-shadow: 0 0 15px skyblue;
+}
+.texto-50{
+    font-size: 50px;
+    text-shadow: 0 0 10px rgb(209, 116, 219);
+}
+/* FIN SECCION HERO */
+/* SECCION INFO */
+.info{
+    background-color: rgb(51, 29, 107);
+    color: rgb(0, 255, 255);
+}
+.contenedor{
+    width: 90%;
+    margin: auto;
+    padding: 80px 0;
+}
+.titulo-info{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+/* FIN SECCION INFO */
+/* SECCION CARDS */
+.contenedor-card{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card{
+    width: 27%;
+    text-align: center;
+    box-shadow: 0 0 5px 0 black;
+    border-radius: 10px;
+    background-color: rgb(145, 253, 255);
+}
+.card:hover{
+    box-shadow: 0 0 10px 0 black;
+    transform: scale(1.1);
+    transition: transform 0.6s;
+    cursor: auto;
+}
+/* Todas las tags y dentro de la clase card obtienen estilos */
+.card i{
+    color: blueviolet;
+    font-size: 50px;
+    
+}
+.card h3{
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.card p{
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    
+}
+.boton{
+    background: transparent;
+    background-color: rgb(32, 32, 139);
+    border: 1px solid white;
+    color: white;
+    padding: 20px 10px;
+    width: 49%;
+    display: inline-block;
+    margin-bottom: 25px;
+    text-decoration: none;
+    border-radius: 3px;
+
+}
+.boton:hover{
+    background-color: rgb(86, 168, 255);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(32, 32, 139);
+}
+/* FIN SECCION CARDS */
+/* Seccion Galeria */
+.margen-icon{
+    margin-top: 25px;
+}
+.contenedor-imagen{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+.contenedor-imagen img{
+    width: 30%;
+    object-fit: cover;
+    margin-bottom: 35px;
+    display: block;
+    box-shadow: 0 0 10px 0 black;
+    cursor: pointer;
+    overflow: hidden;
+}
+.galeria{
+    background-color: rgb(86, 168, 255);
+}
+/* fin galeria */
+
+/* seccion contacto */
+.contacto{
+    background-image: linear-gradient(120deg,rgb(38, 38, 176),
+    rgba(52, 43, 73, 0.8) ), url(imagen7.jpg);
+    color: white;
+    text-shadow: 0 0 12px rgb(255, 10, 145);
+}
+.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  
+}
+.formulario-text{
+    font-size: 40px;
+}
+.input{
+    background: transparent;
+    border: 0;
+    color: white;
+    outline: none;
+    border: 1px solid white;
+    font-size: 25px;
+
+}
+.input::placeholder{
+    color: white;
+    font-family: 'Segoe UI';
+    font-weight: 900;
+}
+.input-ancho{
+    width: 49%;
+    margin-bottom: 30px;
+    display: inline-block;
+    height: 40px;
+}
+
+.textarea-ancho{
+    width: 99%;
+    margin-bottom: 15px;
+}
+/* fin seccion */
+.nav{
+    background-color: black;
+    list-style-type: none;
+    width: 100%;
+    position: fixed;
+}
+
+.nav li{
+    float: left;
+}
+
+.nav li a{
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav li a:hover{
+    background-color: azure;
+    color: black;
+}
