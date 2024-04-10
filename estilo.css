@@ -198,3 +198,10 @@
     background-color: azure;
     color: black;
 }
+.footer{
+    background-color: rgb(28, 1, 59);
+    color: rgb(0, 247, 255);
+}
+.footer p{
+    font-size: 25px;
+}
