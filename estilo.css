@@ -9,9 +9,9 @@
     background-color: aquamarine;
 }
 .hero{
-    background-image: linear-gradient(120deg,rgba(0, 236, 228, 0.5),
-    rgba(52, 43, 73, 0.8) ), url(iamgen1.jpg);
-    height: 450px;
+    background-image: linear-gradient(120deg,rgba(22, 219, 111, 0.5),
+    rgba(115, 171, 177, 0.8) ), url(imagen1.jpeg);
+    height: 900px;
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -28,32 +28,70 @@
     justify-content: center;
     align-items: center;
 }
-.texto-70{
-    font-size: 70px;
-    text-shadow: 0 0 15px skyblue;
+.texto-120{
+    font-size: 120px;
+    text-shadow: 0 0 15px rgb(157, 0, 255);
 }
-.texto-50{
-    font-size: 50px;
-    text-shadow: 0 0 10px rgb(209, 116, 219);
-}
-/* FIN SECCION HERO */
-/* SECCION INFO */
-.info{
-    background-color: rgb(51, 29, 107);
-    color: rgb(0, 255, 255);
+.texto-110{
+    font-size: 110px;
+    text-shadow: 0 0 10px rgb(9, 255, 0);
+    
 }
 .contenedor{
     width: 90%;
     margin: auto;
     padding: 80px 0;
+    
 }
 .titulo-info{
-    font-size: 40px;
+    font-size: 60px;
     text-align: center;
     margin-bottom: 30px;
+    color: green;
+    text-shadow:  3px 3px 0 #1f4f01,
+    -3px 3px 0 #1f4f01,
+    -3px -3px 0 #1f4f01,
+    3px -3px 0 #1f4f01;
+    font-weight: bold;
 }
-/* FIN SECCION INFO */
-/* SECCION CARDS */
+.titulo-juegos{
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(34, 255, 14);
+    text-shadow: 3px 3px 0 #1f4f01,
+    -3px 3px 0 #1f4f01,
+    -3px -3px 0 #1f4f01,
+    3px -3px 0 #1f4f01;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+
+}
+.titulo-galeria{
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(234, 115, 255);
+    text-shadow: 3px 3px 0 rgb(25, 19, 68),
+    -3px 3px 0 rgb(25, 19, 68),
+    -3px -3px 0 rgb(25, 19, 68),
+    3px -3px 0 rgb(25, 19, 68);
+    font-weight: bold;
+}
+.titulo-Contacto{
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 0 rgb(139, 21, 228),
+    -3px 3px 0 rgb(139, 21, 228),
+    -3px -3px 0 rgb(139, 21, 228),
+    3px -3px 0 rgb(139, 21, 228);
+    font-weight: bold;;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-weight: bold;
+/* rgb(139, 21, 228 */
+}
 .contenedor-card{
     display: flex;
     width: 100%;
@@ -65,7 +103,7 @@
     text-align: center;
     box-shadow: 0 0 5px 0 black;
     border-radius: 10px;
-    background-color: rgb(145, 253, 255);
+    background-color: rgb(13, 241, 248);
 }
 .card:hover{
     box-shadow: 0 0 10px 0 black;
@@ -73,9 +111,8 @@
     transition: transform 0.6s;
     cursor: auto;
 }
-/* Todas las tags y dentro de la clase card obtienen estilos */
 .card i{
-    color: blueviolet;
+    color: rgb(31, 115, 6);
     font-size: 50px;
     
 }
@@ -89,26 +126,7 @@
     margin-bottom: 10px;
     
 }
-.boton{
-    background: transparent;
-    background-color: rgb(32, 32, 139);
-    border: 1px solid white;
-    color: white;
-    padding: 20px 10px;
-    width: 49%;
-    display: inline-block;
-    margin-bottom: 25px;
-    text-decoration: none;
-    border-radius: 3px;
 
-}
-.boton:hover{
-    background-color: rgb(86, 168, 255);
-    color: rgb(255, 255, 255);
-    border: 1px solid rgb(32, 32, 139);
-}
-/* FIN SECCION CARDS */
-/* Seccion Galeria */
 .margen-icon{
     margin-top: 25px;
 }
@@ -128,25 +146,14 @@
     cursor: pointer;
     overflow: hidden;
 }
+.contenedor-imagen img:hover{
+    box-shadow: 0 0 10px 0 black;
+    transform: scale(1.1);
+    transition: transform 0.6s;
+    cursor: auto;
+}
 .galeria{
     background-color: rgb(86, 168, 255);
-}
-/* fin galeria */
-
-/* seccion contacto */
-.contacto{
-    background-image: linear-gradient(120deg,rgb(38, 38, 176),
-    rgba(52, 43, 73, 0.8) ), url(imagen7.jpg);
-    color: white;
-    text-shadow: 0 0 12px rgb(255, 10, 145);
-}
-.formulario{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;  
-}
-.formulario-text{
-    font-size: 40px;
 }
 .input{
     background: transparent;
@@ -175,7 +182,7 @@
 }
 /* fin seccion */
 .nav{
-    background-color: black;
+    background-color: rgb(255, 221, 0);
     list-style-type: none;
     width: 100%;
     position: fixed;
@@ -199,8 +206,8 @@
     color: black;
 }
 .footer{
-    background-color: rgb(28, 1, 59);
-    color: rgb(0, 247, 255);
+    background-image: linear-gradient(120deg,rgb(0, 0, 59),
+    rgba(52, 43, 73, 0.8) ), url(IMAGENCONTACTO.jpg);    color: rgb(0, 247, 255);
 }
 .footer p{
     font-size: 25px;
